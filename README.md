@@ -1,8 +1,25 @@
-# typescript 5.2 using and DisposableStack
+# Play using and DisposableStack (ts5.2.0-beta)
 
 ```bash
 $ pnpm install
 $ pnpm tsc -p . && node --expose-gc lib/index.js
+```
+
+## Use `using` today (2023/07/01)
+
+Set `tsconfig.json` to tranpile.
+
+```ts
+    "target": "ES2022",
+    "lib": ["ES2022", "ESNext"],
+```
+
+Need runtime polyfills(via `core-js`)
+
+```ts
+import "core-js/modules/esnext.symbol.dispose.js";
+import "core-js/modules/esnext.symbol.async-dispose.js";
+import "core-js/modules/esnext.disposable-stack.constructor.js";
 ```
 
 ## Reading Polyfill
