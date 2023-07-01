@@ -1,0 +1,18 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+devDependencies:
+  typescript:
+    specifier: 5.2.0-beta
+    version: 5.2.0-beta
+
+packages:
+
+  /typescript@5.2.0-beta:
+    resolution: {integrity: sha512-z5cq8BXVwaY8cwltw0BiyHRCVXen3QNgIzIcJV4NiLzaWvavxltzFSXd2csO4HoBjlGnuG+/LLbUZ8is3fD6iA==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+    dev: true
